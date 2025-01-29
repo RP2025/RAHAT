@@ -16,8 +16,8 @@ function App() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h1>RAHAT</h1>
-          <h2>Mental Wellness Redefined</h2>
+          <h1>RAAHAT</h1>
+          <h2>Your Mental Wellness Redefined</h2>
         </motion.div>
       </div>
 
