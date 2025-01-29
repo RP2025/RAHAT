@@ -1,0 +1,45 @@
+/* Reset margin and padding for body and html */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensure both html and body take full height */
+}
+
+/* Background div styling */
+/* Background styling */
+.background {
+  background: linear-gradient(to bottom, #000000, #df52e9); /* Example colors */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  padding-top: 5px; /* Space from top */
+}
+
+/* Top Heading - Centered at the Top */
+.top-heading {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Left-Aligned Text Box (Below the Heading) */
+.left-textbox {
+  position: absolute;
+  left: 20px; /* Moves text to the left */
+  transform: translateY(-50%);
+  text-align: left;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+

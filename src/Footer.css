@@ -1,0 +1,32 @@
+.footer {
+    position: fixed; /* Keeps the footer at the bottom of the page */
+    bottom: 0;
+    width: 100%;
+    background-color: #0e0e0e1c; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 1.8rem;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.5);
+  }
+  
