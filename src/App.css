@@ -14,7 +14,7 @@ html, body {
 /* Background div styling */
 /* Background styling */
 .background {
-  background: linear-gradient(to bottom, #000000, #df52e9); /* Example colors */
+  background: linear-gradient(to bottom, #ba03c7, #000); /* Example colors */
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -34,12 +34,46 @@ html, body {
 
 /* Left-Aligned Text Box (Below the Heading) */
 .left-textbox {
-  position: absolute;
-  left: 20px; /* Moves text to the left */
-  transform: translateY(-50%);
-  text-align: left;
+ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+position: relative;
   font-size: 1.5rem;
   color: white;
   font-family: 'Arial', sans-serif;
+  /* Removed position absolute and transform */
 }
 
+.right-textbox {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  /* Removed position absolute and transform */
+}
+
+.center-textbox {
+  display: flex;
+  justify-content: center; /* Distributes the left and right text */
+  align-items: center;            /* Vertically centers the text */
+  width: 100%;                    /* Full width to span across the container */
+  padding: 0 15vw;                /* Adds space on left and right for centering */
+}
+
+.circle-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;  /* Ensures the image fits inside the circle */
+  border-radius: 50%; /* This makes the container circular */
+}
+
+.circle-image {
+  width: 100%;  /* Make sure the image stretches to fit the container */
+  height: 100%;
+  object-fit: cover;  /* Ensures the image covers the entire area while maintaining its aspect ratio */
+}

@@ -3,36 +3,63 @@ import './App.css';
 import {FaGithub ,FaLinkedinIn , FaMedium , FaTwitter} from 'react-icons/fa'
 import {TypeAnimation} from 'react-type-animation'
 import {motion} from 'framer-motion'
+import CircularImage from './functions/CircularImage';
 
 function App() {
  
   return (
     <div className="background">
-      <div>
+      
       {/* Top Center Heading */}
       <div className="top-heading">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
+      
           <h1>RAAHAT</h1>
           <h2>Your Mental Wellness Redefined</h2>
-        </motion.div>
+        
       </div>
 
+    <div className="center-textbox">
+
+      
+
       {/* Left Aligned Text Box Below the Heading */}
+      {/* <div className="right-textbox">
+
+        <TypeAnimation sequence={[
+              'Developer' , 
+              2000, 
+              'Coder', 
+              2000 ,
+              'ML enthusiast', 
+              2000 ,
+              'Philomath' , 
+              2000]
+              }
+             speed={30} 
+             className='text-accent'
+             wrapper='span'
+             repeat={Infinity}
+            />
+        </div> */}
+      
+
+      {/* Right Aligned Image */}
       <div className="left-textbox">
-        <TypeAnimation
-          sequence={['Anxiety', 2000, 'Depression', 2000, 'Stress', 2000, 'Mental Health', 2000]}
-          wrapper="span"
-          cursor={true}
-          repeat={100}
-          speed={50}
-        />
+     
+          <CircularImage 
+            src="src\assets\mental-health.jpg"  // Add the path to your image here
+            alt="Profile Picture"
+            size={400}  // You can change the size here
+          />
+       
       </div>
+
+
+
     </div>
-    </div>
+  </div>
+
+  
   );
 }
 
